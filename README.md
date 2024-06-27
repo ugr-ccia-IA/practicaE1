@@ -1,4 +1,4 @@
-# Práctica 2 de *Inteligencia Artificial*, curso 2023/2024
+# Práctica E1 de *Inteligencia Artificial*, curso 2023/2024
 
 Si has realizado la práctica1, y tienes la clave SSH configurada, puedes ir directamente al [paso 2](#2.-crear-tu-copia-personal-del-repositorio-de-la-asignatura).
 
@@ -20,19 +20,19 @@ Cada estudiante debe tener su propia copia del repositorio para poder trabajar s
 
 > La forma usual de crear tu copia del repositorio es realizando un *fork*. Sin embargo, dado que realizar un *fork* de un repositorio con visibilidad pública obliga al que la copia sea también pública, nosotros usaremos un procedimiento diferente que nos permite que nuestra copia del repositorio sea privada.
 
-Para realizar la copia, una vez que tengas creada tu cuenta en GitHub, haz click en <https://github.com/new/import> y rellena tal y como se ve en la imagen de abajo. El repositorio que quieres importar es `https://github.com/ugr-ccia-IA/practica2`. ¡Asegúrate de que tu repositorio es privado!
+Para realizar la copia, una vez que tengas creada tu cuenta en GitHub, haz click en <https://github.com/new/import> y rellena tal y como se ve en la imagen de abajo. El repositorio que quieres importar es `https://github.com/ugr-ccia-IA/practicaE1`. ¡Asegúrate de que tu repositorio es privado!
 
-![Importar repositorio practica2](doc/img/import_new_repo.png)
+![Importar repositorio practicaE1](doc/img/import_new_repo.png)
 
 
 ### 3. Clonar tu repositorio en tu máquina
 Una vez hecho el paso anterior, tendrás tu repositorio personal de la práctica1 en GitHub; puedes descargarlo a tu ordenador usando:
-`git clone git@github.com:TU_USUARIO_GITHUB/practica2.git` (si no has configurado tu clave SSH, esto no funcionará).
+`git clone git@github.com:TU_USUARIO_GITHUB/practicaE1.git` (si no has configurado tu clave SSH, esto no funcionará).
 
 
 ### 4. Modificar el código y guardar los cambios
 Es el momento de empezar a modificar ficheros. Abre el fichero README.md (este fichero) y busca la línea 89. Debes cambiar el enlace que usa el botón para que apunte a tu repositorio y no al de la asignatura.
-Una vez lo hayas modificado, guarda el fichero, y ejecuta los siguientes comandos en el terminal estando dentro de la carpeta `practica2`:
+Una vez lo hayas modificado, guarda el fichero, y ejecuta los siguientes comandos en el terminal estando dentro de la carpeta `practicaE1`:
 
 ```
 git add . 
@@ -49,7 +49,7 @@ Este proceso es el que debes repetir cada vez que vayas avanzando en la implemen
 ### 5. Enlazar tu repositorio personal con el de la asignatura
 Aunque tu repositorio y el de la asignatura (recuerda que los conocemos por *origin* y *upstream* respectivamente) sean independientes, nos va a interesar que estén enlazados. De esta forma, podrás aplicar fácilmente sobre tu repositorio (*origin*) cualquier actualización que los profesores realicemos en *upstream*. Para enlazarlos, ejecuta lo siguiente dentro de la carpeta de tu repositorio:
 
-`git remote add upstream git@github.com:ugr-ccia-IA/practica2.git`
+`git remote add upstream git@github.com:ugr-ccia-IA/practicaE1.git`
 
 
 ### Actualizar tu repositorio con cambios realizados en el de la asignatura
@@ -73,7 +73,7 @@ Junto a ellos, también tienes a tu disposición una pequeña presentación de r
 ### Instalación local (linux)
 
 Una vez que tengas tu repositorio (el fork que has realizado) en tu ordenador, puedes compilar el código usando `./install.sh` (esto instalará todas las dependencias, y ejecutará `cmake` y `make`. ).
-A continuación, puedes lanzar el software con interfaz gráfica con `./practica2`, o sin ella con `./practica2SG`.
+A continuación, puedes lanzar el software con interfaz gráfica con `./practicaE1`, o sin ella con `./practicaE1SG`.
 
 Cuando realices cualquier modificación en el código, debes recompilar, así que usa `make clean` y `make`.
 
@@ -86,7 +86,7 @@ Si no tienes linux de forma nativa en tu ordenador, puedes crear una máquina vi
 Si prefieres no instalar nada localmente, puedes usar [Gitpod](https://gitpod.io). Este es un servicio que no depende de los profesores de la asignatura y que no podemos garantizar que funcione perfectamente. Para ello, haz click en el siguiente botón (después de modificarlo para que apunte a tu repositorio y no al de la asignatura) y sigue las instrucciones.
 
 <!-- IMPORTANTE: Debes cambiar en el siguiente enlace TUSUARIO por tu nombre de usuario en github!  -->
-[![Abrir con Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TUSUARIO/practica2)
+[![Abrir con Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/TUSUARIO/practicaE1)
 
 Una vez que el servidor remoto esté creado (la primera vez tardará un rato en configurarlo todo, las siguientes veces, debería ser más inmediato), verás un IDE completamente funcional en el navegador; puedes seguir usándolo, o usar VScode localmente si lo tienes instalado(aunque conectado al servidor Gitpod remoto). También, se te debería de haber abierto una nueva ventana en el navegador que te mostrará la interfaz gráfica del programa.
 
