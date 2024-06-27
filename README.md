@@ -1,6 +1,6 @@
 # Práctica E1 de *Inteligencia Artificial*, curso 2023/2024
 
-Si has realizado la práctica1, y tienes la clave SSH configurada, puedes ir directamente al [paso 2](#2.-crear-tu-copia-personal-del-repositorio-de-la-asignatura).
+Si has realizado las prácticas en la convocatoria oridinario, es posible que ya tengas la clave SSH configurada y puedes ir directamente al [paso 2](#2.-crear-tu-copia-personal-del-repositorio-de-la-asignatura).
 
 
 
