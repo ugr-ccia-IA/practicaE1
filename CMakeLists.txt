@@ -85,8 +85,8 @@ target_link_libraries(comportamientosLib ${OPENMP_LIBRARIES} "-lpthread")
 add_library(motorLib ${SOURCES_LIBMOTOR})
 target_link_libraries(motorLib obj3DLib GLUILib comportamientosLib OpenGL::GL GLUT::GLUT ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${OPENMP_LIBRARIES} "-lpthread")
 
-add_executable(practica2 "bin_src/juego.cc" ${SOURCES})
-target_link_libraries(practica2 obj3DLib motorLib modelosBelkanLib ${OPENMP_LIBRARIES} "-lpthread")
+add_executable(practicaE1 "bin_src/juego.cc" ${SOURCES})
+target_link_libraries(practicaE1 obj3DLib motorLib modelosBelkanLib ${OPENMP_LIBRARIES} "-lpthread")
 
-add_executable(practica2SG "bin_src/juegoSG.cc" ${SOURCES})
-target_link_libraries(practica2SG   obj3DLib motorLib modelosBelkanLib ${OPENMP_LIBRARIES} "-lpthread")
+add_executable(practicaE1SG "bin_src/juegoSG.cc" ${SOURCES})
+target_link_libraries(practicaE1SG   obj3DLib motorLib modelosBelkanLib ${OPENMP_LIBRARIES} "-lpthread")
