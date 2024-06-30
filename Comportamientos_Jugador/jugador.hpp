@@ -5,6 +5,8 @@
 
 #include <list>
 
+double HeuristicaParaElNivel2(const ubicacion &jugador, const ubicacion &colaborador, const ubicacion &final);
+
 
 class ComportamientoJugador : public Comportamiento {
   public:
@@ -23,10 +25,6 @@ class ComportamientoJugador : public Comportamiento {
 
   private:
     // Declarar Variables de Estado
-
-
-
-
 
 };
 
