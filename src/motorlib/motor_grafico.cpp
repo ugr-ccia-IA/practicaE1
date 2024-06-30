@@ -610,11 +610,11 @@ void botonElegirMapaCB(int valor)
 
   GLUI_Panel *obj_panel = panelSelecMapa->add_panel("Nivel");
   group = panelSelecMapa->add_radiogroup_to_panel(obj_panel, &ultimonivel);
-  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 0: Anchura para el agente jugador    ");
-  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 1: Anchura para el agente colaborador  ");
-  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 2: Dijkstra para el agente jugador   ");
-  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 3: A* para el agente colaborador       ");
-  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 4: Reto (Max puntuación en misiones) ");
+  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 0: Anchura para el agente jugador                      ");
+  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 1: Dijkstra para el agente jugador                     ");
+  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 2: Escalada maxima pendiente para el agente colaborador");
+  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 3: A* para el de menor coste de los dos                ");
+  panelSelecMapa->add_radiobutton_to_group(group, "Nivel 4: Reto (Max puntuación en misiones)                   ");
 
   panelSelecMapa->add_button("Ok", 1, botonAceptarNuevoMapaCB);
   panelSelecMapa->add_button("Ok y Configurar", 2, botonConfigurarNuevoMapaCB);
@@ -770,7 +770,7 @@ void lanzar_motor_grafico(int argc, char **argv)
   glutInitWindowPosition(300, 0);
 
   // Main Window
-  ventanaPrincipal = glutCreateWindow("Practica 2: Agentes Deliberativos/Reactivos. Curso 23/24");
+  ventanaPrincipal = glutCreateWindow("Practica E1: Agentes Deliberativos/Reactivos. Curso 23/24");
   // Main Window callback function
   glutReshapeFunc(reshape);
   glutDisplayFunc(display_ventPrincipal);
@@ -931,7 +931,7 @@ void lanzar_motor_grafico_verOnline(int argc, char **argv, EnLinea &argumentos)
   glutInitWindowPosition(300, 0);
 
   // Main Window
-  ventanaPrincipal = glutCreateWindow("Practica 2: Agentes Deliberativos/Reactivos. Curso 23/24. Version BAJO PARAMETROS");
+  ventanaPrincipal = glutCreateWindow("Practica E1: Agentes Deliberativos/Reactivos. Curso 23/24. Version BAJO PARAMETROS");
   // Main Window callback function
   glutReshapeFunc(reshape);
   glutDisplayFunc(display_ventPrincipal);

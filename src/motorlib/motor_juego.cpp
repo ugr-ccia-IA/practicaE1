@@ -109,14 +109,11 @@ bool actuacionJugador(unsigned char celdaJ_inicial, unsigned char celdaJ_fin, un
             monitor.get_entidad(i)->setObjetivos(monitor.get_active_objetivos());
           }
         }
-        else if (monitor.getLevel() == 0 or monitor.getLevel() == 2)
+        else
         {
           // El jugador llegó a la casilla objetivo.
           monitor.finalizarJuego();
           monitor.setMostrarResultados(true);
-        }
-        else {
-          cout << "-----> En este nivel es el COLABORADOR el que debe llegar a la casilla objetivo\n";
         }
       }
       // monitor.get_entidad(0)->fixBateria_sig_accion(celdaJ_inicial, accion);
@@ -252,15 +249,13 @@ bool actuacionJugador(unsigned char celdaJ_inicial, unsigned char celdaJ_fin, un
             monitor.get_entidad(i)->setObjetivos(monitor.get_active_objetivos());
           }
         }
-        else if (monitor.getLevel() == 0 or monitor.getLevel() == 2)
+        else
         {
           // El jugador llegó a la casilla objetivo.
           monitor.finalizarJuego();
           monitor.setMostrarResultados(true);
         }
-        else {
-          cout << "-----> En este nivel es el COLABORADOR el que debe llegar a la casilla objetivo\n";
-        }
+
 
       }
     }
@@ -453,7 +448,7 @@ bool actuacionNPC(unsigned int entidad, unsigned char celda, Action accion, unsi
               monitor.get_entidad(i)->setObjetivos(monitor.get_active_objetivos());
             }
           }
-          else if (monitor.getLevel() == 1 or monitor.getLevel() == 3)
+          else if (monitor.getLevel() == 2 or monitor.getLevel() == 3)
           {
             // El colaborador llegó a la casilla objetivo.
             cout << "-----> Casilla Objetivo alcanzada por el colaborador\n";
@@ -781,7 +776,7 @@ void lanzar_motor_juego2(MonitorJuego &monitor)
     nucleo_motor_juego(monitor, -1);
   }
 
-  if (monitor.mostrarResultados() and monitor.getLevel() < 2)
+  if (monitor.mostrarResultados() and monitor.getLevel() < 1)
   {
     std::cout << "Longitud del camino: " << 2999 - monitor.get_entidad(0)->getInstantesPendientes() << endl;
     monitor.setMostrarResultados(false);

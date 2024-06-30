@@ -135,7 +135,7 @@ Action Entidad::think(int acc, vector<vector<unsigned char>> vision, int level)
 
     if (tipo == jugador)
     {
-      if (EntidadColaborador->f == destino[0] and EntidadColaborador->c == destino[1] and (level == 1 or level == 3 or level == 4))
+      if (EntidadColaborador->f == destino[0] and EntidadColaborador->c == destino[1] and (level == 3 or level == 3 or level == 4))
       {
         cout << "Mision alcanzada por el colaborador!" << endl;
 
@@ -150,7 +150,7 @@ Action Entidad::think(int acc, vector<vector<unsigned char>> vision, int level)
           completoLosObjetivos = false;
         }
       }
-      else if (f == destino[0] and c == destino[1] and (level == 0 or level == 2 or level == 4))
+      else if (f == destino[0] and c == destino[1])
       {
         if (level != 4)
         {
